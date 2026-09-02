@@ -110687,7 +110687,7 @@
           ]
         }
       ],
-      "release_date": "2026/09/02",
+      "release_date": "2026/08/27",
       "facilities": [
         "Farm +30%",
         "Weaving Workshop +10%"
@@ -110967,7 +110967,7 @@
           ]
         }
       ],
-      "release_date": "2026/09/02",
+      "release_date": "2026/08/27",
       "facilities": [
         "Ocean Supply Corps Base +30%",
         "Armory +10%"
@@ -141695,7 +141695,7 @@
         }
       ],
       "ex_abilities": [],
-      "release_date": "2026/09/02",
+      "release_date": "2026/08/27",
       "facilities": [
         "Space Magic Device +200%",
         "Symbol of Protection +100%"
@@ -141972,7 +141972,7 @@
         }
       ],
       "ex_abilities": [],
-      "release_date": "2026/09/02",
+      "release_date": "2026/08/27",
       "facilities": [
         "Space Magic Device +200%",
         "Symbol of Protection +100%"
@@ -142463,9 +142463,9 @@
   },
   "meta": {
     "character_count": 444,
-    "base_dir": "/tmp/wiki_gl_gzai6vcz",
+    "base_dir": "/tmp/wiki_gl_ktu9h2av",
     "text_asset_dirs": [
-      "/tmp/wiki_gl_gzai6vcz/TextAsset"
+      "/tmp/wiki_gl_ktu9h2av/TextAsset"
     ],
     "asset_bundle_dir": null,
     "dump_cs_path": "/home/runner/work/gameless-wiki-update/gameless-wiki-update/dump.cs"
