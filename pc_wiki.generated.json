@@ -184937,11 +184937,11 @@
   },
   "meta": {
     "character_count": 444,
-    "base_dir": "C:\\Users\\Angel105\\AppData\\Local\\Temp\\claude\\d--Slime-Isekai-Memories-Game-Files\\23968ec4-17ec-42af-b843-b68f3da18e41\\scratchpad\\pltest2",
+    "base_dir": "/tmp/wiki_gl_9gmw3wp_",
     "text_asset_dirs": [
-      "C:\\Users\\Angel105\\AppData\\Local\\Temp\\claude\\d--Slime-Isekai-Memories-Game-Files\\23968ec4-17ec-42af-b843-b68f3da18e41\\scratchpad\\pltest2\\TextAsset"
+      "/tmp/wiki_gl_9gmw3wp_/TextAsset"
     ],
     "asset_bundle_dir": null,
-    "dump_cs_path": "D:\\Slime_Extractor_Backup\\dump.cs"
+    "dump_cs_path": "/home/runner/work/gameless-wiki-update/gameless-wiki-update/dump.cs"
   }
 }
