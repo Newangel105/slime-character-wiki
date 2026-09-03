@@ -45967,7 +45967,7 @@
       "tactics_type": "Defense",
       "master_strategy_type_group_label": "Defense",
       "master_character_tactics_type": "Defense",
-      "master_pc_level_group_id": 1523,
+      "master_pc_level_group_id": 51523,
       "master_statusboard_id": 1700001523,
       "master_enhanced_statusboard_id": 0,
       "character_role": "Attacker",
@@ -46181,7 +46181,7 @@
           "label": "DinoDemonLord_debuff_823",
           "kind": "debuff",
           "name": "Heavenly Dreams",
-          "description_max_level": "Decreases a single target's Secret Skill Gauge by <color=#2BE41D>-20%</color>\nIncreases all allies' guard rate by <color=#2BE41D>100%</color> (Turns: 1)",
+          "description_max_level": "Decreases a single target's secret skill gauge by <color=#2BE41D>-20%</color>\nIncreases all allies' guard rate by <color=#2BE41D>100%</color> (Turns: 1)\nIncreases physical/magic attack damage for all allies including rearguard by <color=#2BE41D>125%</color> (Turns: 2)\nApplies Multi-hit State to all souls, adding <color=#2BE41D>3</color> attacks of an extra large percentage of damage based on the soul (Turns: 2)   ",
           "icon_path": "Image/Skill/041/21/{1}/IcSkill_041_21_{1}_{0}",
           "cost": 25,
           "battle_attack_effects": [
@@ -46206,10 +46206,39 @@
               "base_effect_value": 10000,
               "level_add_effect_value": 0,
               "effect_value": 10000
+            },
+            {
+              "target_type": 3,
+              "parameter_type": 500,
+              "value_type": 1,
+              "buff_type": 1,
+              "base_effect_value": 12500,
+              "level_add_effect_value": 0,
+              "effect_value": 12500
+            },
+            {
+              "target_type": 3,
+              "parameter_type": 501,
+              "value_type": 1,
+              "buff_type": 1,
+              "base_effect_value": 12500,
+              "level_add_effect_value": 0,
+              "effect_value": 12500
             }
           ],
           "battle_condition_effects": [],
-          "battle_card_effects": [],
+          "battle_card_effects": [
+            {
+              "card_target_type": 3,
+              "card_effect_type": 12,
+              "base_effect_value": 15000,
+              "level_add_effect_value": 0,
+              "effect_value": 15000,
+              "base_effect_max_value": 15000,
+              "level_add_effect_max_value": 0,
+              "effect_max_value": 15000
+            }
+          ],
           "battle_system_effects": [],
           "skill_level_group_id": 5100110,
           "skill_change_type": "Magic Changing",
@@ -46228,6 +46257,13 @@
               "target_scope": "all"
             },
             {
+              "master_skill_filter_group_id": 21500000000105,
+              "category_name": "Special",
+              "sub_category_label": "Multi-hit Soul",
+              "effect_family": "card",
+              "raw_effect_polarity": "buff"
+            },
+            {
               "master_skill_filter_group_id": 21500000000163,
               "category_name": "GageDown",
               "sub_category_label": "Secret Skill Gauge DOWN",
@@ -46235,6 +46271,26 @@
               "target_type_name": "RivalSideOne",
               "target_team": "enemy",
               "target_scope": "single"
+            },
+            {
+              "master_skill_filter_group_id": 21500000000173,
+              "category_name": "DamageUP",
+              "sub_category_label": "Magic Attack Damage UP",
+              "effect_family": "buff",
+              "raw_effect_polarity": "buff",
+              "target_type_name": "FriendSideAll",
+              "target_team": "ally",
+              "target_scope": "all"
+            },
+            {
+              "master_skill_filter_group_id": 21500000000174,
+              "category_name": "DamageUP",
+              "sub_category_label": "Physical Attack Damage UP",
+              "effect_family": "buff",
+              "raw_effect_polarity": "buff",
+              "target_type_name": "FriendSideAll",
+              "target_team": "ally",
+              "target_scope": "all"
             }
           ]
         },
@@ -51007,7 +51063,7 @@
           "label": "MilimMythology_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -51084,7 +51140,7 @@
           "label": "MilimMythology_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -59098,7 +59154,7 @@
           "label": "MaskedHeroHA2023_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -59175,7 +59231,7 @@
           "label": "MaskedHeroHA2023_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -62232,7 +62288,7 @@
           "label": "LuminousHA2023_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -62309,7 +62365,7 @@
           "label": "LuminousHA2023_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -68227,7 +68283,7 @@
           "label": "LuminousSwimsuit2023_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -68304,7 +68360,7 @@
           "label": "LuminousSwimsuit2023_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -73377,7 +73433,7 @@
           "label": "Shizu2Anniv_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -73451,7 +73507,7 @@
           "label": "Shizu2Anniv_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -88203,7 +88259,7 @@
           "label": "GuyHA2024_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -88280,7 +88336,7 @@
           "label": "GuyHA2024_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -101877,7 +101933,7 @@
           "label": "Diablo3Anniv_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -101943,7 +101999,7 @@
           "label": "Diablo3Anniv_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -105574,7 +105630,7 @@
           "label": "FrierenDefault_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -105637,7 +105693,7 @@
           "label": "FrierenDefault_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -112701,7 +112757,7 @@
           "label": "WerzardHA2025_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -112764,7 +112820,7 @@
           "label": "WerzardHA2025_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -121299,7 +121355,7 @@
           "label": "RyuDefault_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -121365,7 +121421,7 @@
           "label": "RyuDefault_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -121727,7 +121783,7 @@
           "label": "MasayukiDevil_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -121790,7 +121846,7 @@
           "label": "MasayukiDevil_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -127293,7 +127349,7 @@
           "label": "HinataXmas2025_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -127356,7 +127412,7 @@
           "label": "HinataXmas2025_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -134664,7 +134720,7 @@
           "label": "DiabloBlackHero_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -134727,7 +134783,7 @@
           "label": "DiabloBlackHero_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -137381,7 +137437,7 @@
           "label": "VeldoraHA2026_debuff_50",
           "kind": "debuff",
           "name": "Charge - Secret DOWN Initial Conditions",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 10% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
           "cost": null,
           "battle_attack_effects": [
@@ -137444,7 +137500,7 @@
           "label": "VeldoraHA2026_debuff_51",
           "kind": "debuff",
           "name": "Charge - Secret DOWN",
-          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, the secret skill gauge of all targets is decreased by 20% (Uses by this character per battle: 1)",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
           "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
           "cost": null,
           "battle_attack_effects": [
@@ -145770,6 +145826,457 @@
       "facilities": [
         "Ocean Supply Corps Base +30%",
         "Armory +10%"
+      ]
+    },
+    {
+      "master_pc_id": 160690,
+      "name": "Luminus Valentine",
+      "affiliation_name": "Majestic Maidservant",
+      "rarity": 6,
+      "element": "EnhancedEarth",
+      "attack_type": "Physical",
+      "weapon_type": "Largesword",
+      "tactics_type": "Charge",
+      "master_strategy_type_group_label": "Charge",
+      "master_character_tactics_type": "ExtremeAttack",
+      "master_pc_level_group_id": 1612,
+      "master_statusboard_id": 1700001612,
+      "master_enhanced_statusboard_id": 190000200000081,
+      "character_role": "Attacker",
+      "ultimate_type": "Attack",
+      "stats": {
+        "hp": 1140,
+        "attack": 670,
+        "defense": 540,
+        "existence": 2350
+      },
+      "images": {
+        "icon": "Image/Character/PC/LuminousMaid2026/7/LuminousMaid2026_7_CharaPartyM",
+        "full": "Image/Character/PC/LuminousMaid2026/7/LuminousMaid2026_7_CharaInfo"
+      },
+      "forces": [
+        {
+          "label": "event_16",
+          "name": "Protector of Peace",
+          "group": "event",
+          "icon_path": "Image/IcCategory/event/category_140000000000048"
+        },
+        {
+          "label": "team_4",
+          "name": "Octagram Demon Lord",
+          "group": "team",
+          "icon_path": "Image/IcCategory/team/category_140000000000028"
+        },
+        {
+          "label": "ablity_2",
+          "name": "Commander",
+          "group": "ability",
+          "icon_path": "Image/IcCategory/ability/category_140000000000019"
+        },
+        {
+          "label": "event_15",
+          "name": "Determination to Prosper",
+          "group": "event",
+          "icon_path": "Image/IcCategory/event/category_140000000000047"
+        },
+        {
+          "label": "tribe_7",
+          "name": "Wielder of Magic",
+          "group": "ability",
+          "icon_path": "Image/IcCategory/ability/category_140000000000016"
+        }
+      ],
+      "skills": [
+        {
+          "slot": "special_skill",
+          "label": "LuminousMaid2026_special_22",
+          "kind": "special",
+          "name": "Nightfall Impact",
+          "description_max_level": "Unleashes a single-target earth physical attack for <color=#2BE41D>800%</color> normal damage\nUse 200% of secret skill gauge to change to Ultimate Soul of Combos: Damage x2, Massively increases damage to weak attributes",
+          "icon_path": "Image/Character/PC/LuminousMaid2026/7/LuminousMaid2026_7_CharaCard",
+          "cost": null,
+          "battle_attack_effects": [
+            {
+              "target_type": 0,
+              "attack_type": "Physical",
+              "element_type": "EnhancedEarth",
+              "attack_calc_type": 0,
+              "attack_base_type": 0,
+              "attack_base_value": 0,
+              "base_effect_value": 45000,
+              "level_add_effect_value": 35000,
+              "effect_value": 80000
+            }
+          ],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [],
+          "skill_level_group_id": 7001,
+          "special_skill_type": "Attack"
+        },
+        {
+          "slot": "active_skill_1",
+          "label": "LuminousMaid2026_debuff_23",
+          "kind": "debuff",
+          "name": "Luminous Lusterwall",
+          "description_max_level": "Decreases all targets' earth+ and dark+ damage resistance by <color=#2BE41D>-80%</color> (Turns: 2)\nIncreases EX Soul of Combos damage by <color=#2BE41D>80%</color> (Turns: 2)\nWeakening Boost: Increases by <color=#2BE41D>4%</color> for each weakening effect instance applied to a target (Total Max: 180% each; effects applied to all targets count as 1 instance)",
+          "icon_path": "Image/Skill/064/08/{1}/IcSkill_064_08_{1}_{0}",
+          "cost": 90,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [
+            {
+              "target_type": 1,
+              "parameter_type": 1526,
+              "value_type": 1,
+              "buff_type": 2,
+              "base_effect_value": -8000,
+              "level_add_effect_value": 0,
+              "effect_value": -8000
+            },
+            {
+              "target_type": 1,
+              "parameter_type": 1528,
+              "value_type": 1,
+              "buff_type": 2,
+              "base_effect_value": -8000,
+              "level_add_effect_value": 0,
+              "effect_value": -8000
+            }
+          ],
+          "battle_condition_effects": [],
+          "battle_card_effects": [
+            {
+              "card_target_type": 5,
+              "card_effect_type": 8,
+              "base_effect_value": 8000,
+              "level_add_effect_value": 0,
+              "effect_value": 8000,
+              "base_effect_max_value": 18000,
+              "level_add_effect_max_value": 0,
+              "effect_max_value": 18000
+            }
+          ],
+          "battle_system_effects": [],
+          "skill_level_group_id": 67,
+          "skill_change_type": "Defense Changing",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000087,
+              "category_name": "DamageUP",
+              "sub_category_label": "EX Soul of Combos Damage UP",
+              "effect_family": "card",
+              "raw_effect_polarity": "buff"
+            },
+            {
+              "master_skill_filter_group_id": 21500000000209,
+              "category_name": "DamageUP",
+              "sub_category_label": "Earth+<br>Damage Resistance DOWN",
+              "effect_family": "buff",
+              "raw_effect_polarity": "debuff",
+              "target_type_name": "RivalSideAll",
+              "target_team": "enemy",
+              "target_scope": "all"
+            },
+            {
+              "master_skill_filter_group_id": 21500000000211,
+              "category_name": "DamageUP",
+              "sub_category_label": "Dark+<br>Damage Resistance DOWN",
+              "effect_family": "buff",
+              "raw_effect_polarity": "debuff",
+              "target_type_name": "RivalSideAll",
+              "target_team": "enemy",
+              "target_scope": "all"
+            }
+          ]
+        },
+        {
+          "slot": "active_skill_2",
+          "label": "LuminousMaid2026_buff_24",
+          "kind": "buff",
+          "name": "Feast for a Queen",
+          "description_max_level": "Applies Resurrection state to <color=#FFFF00>Protector of Peace</color>, <color=#FFFF00>Octagram Demon Lord</color>, and <color=#FFFF00>Wielder of Magic</color> Force characters (Turns: 3); At turn end, recovers <color=#2BE41D>100%</color> of HP lost (If incapacitated, revives with <color=#2BE41D>100%</color> of max HP)\nChanges non-Unity soul x<color=#2BE41D>2</color> into Soul of Unity\n(Uses per battle: 1)",
+          "icon_path": "Image/Skill/035/08/{1}/IcSkill_035_08_{1}_{0}",
+          "cost": 30,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [
+            {
+              "condition_effect_type": 46,
+              "base_probability": 10000,
+              "level_add_probability": 0,
+              "probability": 10000,
+              "base_value1": 10000,
+              "base_value2": 10000,
+              "base_value3": 10000,
+              "level_add_value": 0,
+              "effect_value": 10000
+            }
+          ],
+          "battle_card_effects": [],
+          "battle_system_effects": [
+            {
+              "system_effect_type": 3,
+              "normal_card_type": 6,
+              "base_effect_value": 2,
+              "level_add_effect_value": 0,
+              "effect_value": 2,
+              "base_probability": 10000,
+              "level_add_probability": 0,
+              "probability": 10000
+            }
+          ],
+          "skill_level_group_id": 67,
+          "skill_change_type": "Body and Spirit Changing",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000150,
+              "category_name": "BuffChangeAct",
+              "sub_category_label": "All → Unity",
+              "effect_family": "system",
+              "raw_effect_polarity": "utility",
+              "change_source_label": "All",
+              "change_target_label": "Unity"
+            },
+            {
+              "master_skill_filter_group_id": 21500000000161,
+              "category_name": "ConditionChange",
+              "sub_category_label": "Resurrection",
+              "effect_family": "condition",
+              "raw_effect_polarity": "buff",
+              "target_type_name": "FriendSideAll",
+              "target_team": "ally",
+              "target_scope": "all"
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_debuff_50",
+          "kind": "debuff",
+          "name": "Charge - Secret DOWN Initial Conditions",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 10% (Uses by this character per battle: 1)",
+          "icon_path": "Image/ArenaPassiveSkill/041/21/1/IcArenaPassiveSkill_041_21_1",
+          "cost": null,
+          "battle_attack_effects": [
+            {
+              "target_type": 1,
+              "attack_type": "SpecialPoint",
+              "element_type": "EnhancedEarth",
+              "attack_calc_type": 2,
+              "attack_base_type": 0,
+              "attack_base_value": 0,
+              "base_effect_value": -1000,
+              "level_add_effect_value": 0,
+              "effect_value": -1000
+            }
+          ],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [],
+          "skill_level_group_id": null,
+          "unlock": "Initial Conditions"
+        },
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_passive_30",
+          "kind": "passive",
+          "name": "HP - Pierce Power UP",
+          "description_max_level": "When you have 75% or more HP, increases own pierce power by 8% at start of turn (available in support formation)",
+          "icon_path": "Image/PassiveSkill/021/02/1/IcPassiveSkill_021_02_1",
+          "cost": null,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [
+            {
+              "target_type": 5,
+              "parameter_type": 305,
+              "value_type": 1,
+              "buff_type": 1,
+              "base_effect_value": 800,
+              "level_add_effect_value": 0,
+              "effect_value": 800
+            }
+          ],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [],
+          "skill_level_group_id": null,
+          "unlock": "Awaken 1/5",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000021,
+              "category_name": "DamageUP",
+              "sub_category_label": "Pierce Power UP",
+              "effect_family": "buff",
+              "raw_effect_polarity": "buff",
+              "target_type_name": "Self",
+              "target_team": "self",
+              "target_scope": "self"
+            }
+          ]
+        },
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_debuff_51",
+          "kind": "debuff",
+          "name": "Charge - Secret DOWN",
+          "description_max_level": "When you use souls while 1 or more enemy characters have a secret skill gauge with 100% or more filled, decreases all targets' Secret Skill Gauge by 20% (Uses by this character per battle: 1)",
+          "icon_path": "Image/ArenaPassiveSkill/041/21/2/IcArenaPassiveSkill_041_21_2",
+          "cost": null,
+          "battle_attack_effects": [
+            {
+              "target_type": 1,
+              "attack_type": "SpecialPoint",
+              "element_type": "EnhancedEarth",
+              "attack_calc_type": 2,
+              "attack_base_type": 0,
+              "attack_base_value": 0,
+              "base_effect_value": -2000,
+              "level_add_effect_value": 0,
+              "effect_value": -2000
+            }
+          ],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [],
+          "skill_level_group_id": null,
+          "unlock": "Awaken 2/5"
+        },
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_passive_31",
+          "kind": "passive",
+          "name": "HP - Pierce Power UP",
+          "description_max_level": "When you have 75% or more HP, increases own pierce power by 12% at start of turn (available in support formation)",
+          "icon_path": "Image/PassiveSkill/021/02/2/IcPassiveSkill_021_02_2",
+          "cost": null,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [
+            {
+              "target_type": 5,
+              "parameter_type": 305,
+              "value_type": 1,
+              "buff_type": 1,
+              "base_effect_value": 1200,
+              "level_add_effect_value": 0,
+              "effect_value": 1200
+            }
+          ],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [],
+          "skill_level_group_id": null,
+          "unlock": "Awaken 3/5",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000021,
+              "category_name": "DamageUP",
+              "sub_category_label": "Pierce Power UP",
+              "effect_family": "buff",
+              "raw_effect_polarity": "buff",
+              "target_type_name": "Self",
+              "target_team": "self",
+              "target_scope": "self"
+            }
+          ]
+        },
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_passive_32",
+          "kind": "passive",
+          "name": "Troop - Skill UP",
+          "description_max_level": "When your troop contains 3 or more battle characters, increases skill points by 5 every 3 turns (available in support formation)",
+          "icon_path": "Image/PassiveSkill/041/15/1/IcPassiveSkill_041_15_1",
+          "cost": null,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [
+            {
+              "system_effect_type": 21,
+              "normal_card_type": 5,
+              "base_effect_value": 5,
+              "level_add_effect_value": 0,
+              "effect_value": 5,
+              "base_probability": 10000,
+              "level_add_probability": 0,
+              "probability": 10000
+            }
+          ],
+          "skill_level_group_id": null,
+          "unlock": "Awaken 4/5",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000132,
+              "category_name": "GageUP",
+              "sub_category_label": "Skill Point UP",
+              "effect_family": "system"
+            }
+          ]
+        },
+        {
+          "slot": "arousal_trait",
+          "label": "LuminousMaid2026_passive_33",
+          "kind": "passive",
+          "name": "Troop - Skill UP",
+          "description_max_level": "When your troop contains 3 or more battle characters, increases skill points by 8 every 3 turns (available in support formation)",
+          "icon_path": "Image/PassiveSkill/041/15/2/IcPassiveSkill_041_15_2",
+          "cost": null,
+          "battle_attack_effects": [],
+          "battle_buff_effects": [],
+          "battle_condition_effects": [],
+          "battle_card_effects": [],
+          "battle_system_effects": [
+            {
+              "system_effect_type": 21,
+              "normal_card_type": 5,
+              "base_effect_value": 8,
+              "level_add_effect_value": 0,
+              "effect_value": 8,
+              "base_probability": 10000,
+              "level_add_probability": 0,
+              "probability": 10000
+            }
+          ],
+          "skill_level_group_id": null,
+          "unlock": "Awaken 5/5",
+          "skill_filter_groups": [
+            {
+              "master_skill_filter_group_id": 21500000000132,
+              "category_name": "GageUP",
+              "sub_category_label": "Skill Point UP",
+              "effect_family": "system"
+            }
+          ]
+        }
+      ],
+      "ex_abilities": [
+        {
+          "name": "Individual Mercy",
+          "description": "Increases own following status when Rimuru Tempest is assigned to a battle slot.",
+          "effects": [
+            "<color=#2BE41D>Increases pierce power by 12%</color>"
+          ]
+        },
+        {
+          "name": "Physical Mercy",
+          "description": "Increases own following status in accordance with the number of physical attack characters assigned to battle slots.",
+          "effects": [
+            "<color=#2BE41D>Increases HP by 396</color>",
+            "<color=#2BE41D>Increases ATK by 200</color>",
+            "<color=#2BE41D>Increases DEF by 116</color>"
+          ]
+        }
+      ],
+      "release_date": "2026/09/03",
+      "facilities": [
+        "Feast Hot Pot +30%",
+        "Purple Magicluster Digsite +10%"
       ]
     },
     {
@@ -184936,10 +185443,10 @@
     }
   },
   "meta": {
-    "character_count": 444,
-    "base_dir": "/tmp/wiki_gl_vqpll5uu",
+    "character_count": 445,
+    "base_dir": "/tmp/wiki_gl_xk22ns0s",
     "text_asset_dirs": [
-      "/tmp/wiki_gl_vqpll5uu/TextAsset"
+      "/tmp/wiki_gl_xk22ns0s/TextAsset"
     ],
     "asset_bundle_dir": null,
     "dump_cs_path": "/home/runner/work/gameless-wiki-update/gameless-wiki-update/dump.cs"
