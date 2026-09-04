@@ -146273,7 +146273,7 @@
           ]
         }
       ],
-      "release_date": "2026/09/03",
+      "release_date": "2026/09/04",
       "facilities": [
         "Feast Hot Pot +30%",
         "Purple Magicluster Digsite +10%"
@@ -185444,9 +185444,9 @@
   },
   "meta": {
     "character_count": 445,
-    "base_dir": "/tmp/wiki_gl_xk22ns0s",
+    "base_dir": "/tmp/wiki_gl_wh6z1iwb",
     "text_asset_dirs": [
-      "/tmp/wiki_gl_xk22ns0s/TextAsset"
+      "/tmp/wiki_gl_wh6z1iwb/TextAsset"
     ],
     "asset_bundle_dir": null,
     "dump_cs_path": "/home/runner/work/gameless-wiki-update/gameless-wiki-update/dump.cs"
